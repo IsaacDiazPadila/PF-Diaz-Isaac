@@ -3,27 +3,87 @@
     text-shadow: black;
 }
 
-.jumbotron {
-    background-image: url(../img/Bajaj-NS-125-Rouser-Pulsar-9-1.jpg);
+@mixin image {
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    line-height: 1.2;
+    font-family: $font1;
+    font-style: normal;
+}
+
+.showcase {
+    position: relative;
+    display: grid;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $color-crema;
+}
+
+.texto {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    justify-content: center;
+
+    a {
+        background-color: $color-vinotinto;
+        @include anclas;
+        padding: 10px 20px;
+        border-radius: 10%;
+
+        &:hover {
+            background-color: $color-crema;
+            color: $color-vinotinto;
+        }
+    }
+}
+
+.nav-link {
+    color: $color-crema;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.jumbotron {
+    background-image: url(../assets/Bajaj-NS-125-Rouser-Pulsar-9-1.jpg);
+    @include image;
     height: 600px;
+    width: 100%;
     display: grid;
     place-items: center;
 }
 
 .call {
     background-color: rgba(255, 255, 255, 0.685);
-    margin-top: 100px;
-    width: 70%;
+    margin-top: 50px;
+    width: 50%;
     padding: 20px;
-    border: 5px solid black;
+    border: 5px solid $color-negro;
     text-align: center;
+}
 
+h5 {
+    font-family: $font1;
+    color: $color-negro;
+    font-weight: bold;
+}
+
+.call {
     a {
         background-color: $color-vinotinto;
         @include anclas;
         padding: 10px 20px;
+        border-radius: 10%;
 
         &:hover {
             background-color: $color-crema;
@@ -36,12 +96,14 @@
     }
 }
 
-h5 a {
-    @include anclas;
+h4 a {
+    text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
     background-color: $color-vinotinto;
+    @include anclas;
     padding: 10px 20px;
+    border-radius: 10%;
 
     &:hover {
         background-color: $color-crema;
@@ -49,20 +111,18 @@ h5 a {
     }
 }
 
-h2 {
+h2,
+h3 {
     margin-bottom: 0;
     padding: 10px;
     background-color: rgba(165, 42, 42, 0.879);
     font-family: $font1;
 }
 
-.curiosidades article {
-    border: 20px solid white;
-}
-
-.what {
-    height: 40px;
-    width: 40px;
-    background-color: $color-vinotinto;
-    position: fixed;
+.fi1 {
+    @include image;
+    display: grid;
+    width: 100%;
+    max-height: 500px;
+    z-index: 1;
 }

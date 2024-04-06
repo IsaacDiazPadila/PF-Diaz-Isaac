@@ -1,0 +1,29 @@
+/*footer*/
+
+footer {
+    background-color: $color-negro;
+    color: $color-crema;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.redes {
+    margin-top: 20px;
+
+    a {
+        color: $color-vinotinto;
+        text-decoration: none;
+        letter-spacing: 15px;
+        font-size: 30px;
+    }
+}
+
+.what {
+    height: 40px;
+    width: 40px;
+    background-color: $color-vinotinto;
+    position: fixed;
+}
+
+/*Fin Footer*/

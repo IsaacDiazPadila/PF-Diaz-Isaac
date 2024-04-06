@@ -1,0 +1,11 @@
+/*Inicio Noticias*/
+
+.salon,
+.salon1,
+.salon2 {
+    @include image;
+    display: grid;
+    max-height: 650px;
+}
+
+/*Fin de Noticias*/
